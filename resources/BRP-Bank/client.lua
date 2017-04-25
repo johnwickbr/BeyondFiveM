@@ -65,7 +65,7 @@ end
       Citizen.Wait(0)
       if(IsNearBank() or IsNearATM()) then
         if (atBank == false) then
-          TriggerEvent('chatMessage', "", {0, 255, 0}, "/withdraw, /deposit, /transfer^4 (ID)^7, /balance");
+          TriggerEvent('chatMessage', "", {0, 255, 0}, "^4Commands: ^7/withdraw, /deposit, /transfer^4 (ID)^7, /balance");
         end
         atBank = true
         if IsControlJustPressed(1, 38)  then -- IF INPUT_PICKUP Is pressed

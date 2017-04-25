@@ -195,8 +195,8 @@ TriggerEvent('es:addGroupCommand', 'freeze', "mod", function(source, args, user)
 					state = "frozen"
 				end
 
-				TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have been " .. state .. " by ^2" .. GetPlayerName(source))
-				TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Player ^2" .. GetPlayerName(player) .. "^0 has been " .. state)
+				TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have been " .. state .. " by ^4" .. GetPlayerName(source))
+				TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Player ^4" .. GetPlayerName(player) .. "^0 has been " .. state)
 			end)
 		else
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
@@ -220,8 +220,8 @@ TriggerEvent('es:addGroupCommand', 'bring', "mod", function(source, args, user)
 
 				TriggerClientEvent('es_admin:teleportUser', player, source)
 
-				TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have brought by ^2" .. GetPlayerName(source))
-				TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Player ^2" .. GetPlayerName(player) .. "^0 has been brought")
+				TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have brought by ^4" .. GetPlayerName(source))
+				TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Player ^4" .. GetPlayerName(player) .. "^0 has been brought")
 			end)
 		else
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
@@ -245,8 +245,8 @@ TriggerEvent('es:addGroupCommand', 'slap', "admin", function(source, args, user)
 
 				TriggerClientEvent('es_admin:slap', player)
 
-				TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have slapped by ^2" .. GetPlayerName(source))
-				TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Player ^2" .. GetPlayerName(player) .. "^0 has been slapped")
+				TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have slapped by ^4" .. GetPlayerName(source))
+				TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Player ^4" .. GetPlayerName(player) .. "^0 has been slapped")
 			end)
 		else
 			TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Incorrect player ID!")
@@ -271,8 +271,8 @@ TriggerEvent('es:addGroupCommand', 'goto', "mod", function(source, args, user)
 
 					TriggerClientEvent('es_admin:teleportUser', source, player)
 
-					TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have been teleported to by ^2" .. GetPlayerName(source))
-					TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Teleported to player ^2" .. GetPlayerName(player) .. "")
+					TriggerClientEvent('chatMessage', player, "SYSTEM", {255, 0, 0}, "You have been teleported to by ^4" .. GetPlayerName(source))
+					TriggerClientEvent('chatMessage', source, "SYSTEM", {255, 0, 0}, "Teleported to player ^4" .. GetPlayerName(player) .. "")
 				end
 			end)
 		else

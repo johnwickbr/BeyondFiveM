@@ -163,7 +163,7 @@ TriggerEvent('es:addCommand', 'cuff', function(source, args, user)
 
 						TriggerClientEvent('es_roleplay:cuff', -1, cuffed[target.identifier], tonumber(args[2]))
 						TriggerClientEvent('chatMessage', source, "", {255, 0, 0}, "^4" .. GetPlayerName(tonumber(args[2])) .. "^7 has been " .. state .. "^7.")
-						TriggerClientEvent('chatMessage', tonumber(args[2]), "", {255, 0, 0}, "You have been " .. state .. "^7 by" .. GetPlayerName(source) .. ".")
+						TriggerClientEvent('chatMessage', tonumber(args[2]), "", {255, 0, 0}, "You have been " .. state .. "^7 by ^4" .. GetPlayerName(source) .. ".")
 
 						TriggerEvent("es_roleplay:playerCuffed", tonumber(args[2]), cuffed[target.identifier])
 					end)
@@ -204,8 +204,8 @@ TriggerEvent('es:addCommand', 'unseat', function(source, args, user)
 						end
 
 						TriggerClientEvent('es_roleplay:unseat', tonumber(args[2]), tonumber(args[2]))
-						TriggerClientEvent('chatMessage', source, "JOB", {255, 0, 0}, "Player ^2" .. GetPlayerName(tonumber(args[2])) .. "^0 has been unseated.")
-						TriggerClientEvent('chatMessage', tonumber(args[2]), "JOB", {255, 0, 0}, "You have been unseated by ^2" .. GetPlayerName(source) .. "^0.")
+						TriggerClientEvent('chatMessage', source, "JOB", {255, 0, 0}, "^4" .. GetPlayerName(tonumber(args[2])) .. "^0 has been unseated.")
+						TriggerClientEvent('chatMessage', tonumber(args[2]), "JOB", {255, 0, 0}, "You have been unseated by ^4" .. GetPlayerName(source) .. "^0.")
 					end)
 				else
 					TriggerClientEvent('chatMessage', source, "JOB", {255, 0, 0}, "Incorrect player ID")
