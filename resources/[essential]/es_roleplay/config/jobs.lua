@@ -1,7 +1,7 @@
 jobs = {
 	["police"] = {
 		["displayName"] = "Sandy Shore Police Officer",
-		["skin"] = "s_m_y_cop_03",
+		["skin"] = "s_m_y_sheriff_01",
 		["onJoin"] = function(source, user)
 			TriggerClientEvent('chatMessage', source, "JOB", {255, 0, 0}, "Get your police vehicle at the ^4garage^0 for ^2£2 000")
 		end,

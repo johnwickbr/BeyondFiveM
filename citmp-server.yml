@@ -16,13 +16,16 @@ AutoStartResources:
     - es_admin
     - es_adminpanel
     - watermark
+    - es_carshop
     - BRP-Taxi
     - BRP-Bank
     - BRP-Blip
     - BRP-Handsup
+    - BRP-playernames
     - emotes
     - speedcamera
     - interiors
+
 
 
 
