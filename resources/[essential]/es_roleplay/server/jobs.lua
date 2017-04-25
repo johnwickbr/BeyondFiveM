@@ -255,7 +255,7 @@ TriggerEvent('es:addCommand', 'r', function(source, args, user)
 				end
 
 				for e,c in ipairs(jobs[k].members) do
-					TriggerClientEvent('chatMessage', player_jobs[c]['source'], "", {255, 255, 0}, "^3Radio^7: " .. GetPlayerName(source) .. "^0 (Unit " .. player_jobs[user.identifier].id .. "^0): " .. table.concat(args, " "))
+					TriggerClientEvent('chatMessage', player_jobs[c]['source'], "", {255, 255, 0}, "^3RADIO^7: " .. GetPlayerName(source) .. "^0 (Unit " .. player_jobs[user.identifier].id .. "^0): " .. table.concat(args, " "))
 				end
 			end
 		end
