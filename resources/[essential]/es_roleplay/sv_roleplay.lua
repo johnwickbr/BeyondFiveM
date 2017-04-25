@@ -14,9 +14,9 @@ end
 
 -- Default commands
 TriggerEvent('es:addCommand', 'help', function(source, args, user)
-	TriggerClientEvent("chatMessage", source, "", {255, 0, 0},"^4" .. "Payment Commands: ^7  /givecash")
-	TriggerClientEvent("chatMessage", source, "", {255, 0, 0}, "^4" .. "Chat Commands: ^7  /do, /me, /ooc")
-	TriggerClientEvent("chatMessage", source, "", {255, 0, 0}, "^4" .. "Info Commands: ^7  /discord")
+	TriggerClientEvent("chatMessage", source, "", {255, 0, 0}, "^4Payment^7 Commands: /givecash")
+	TriggerClientEvent("chatMessage", source, "", {255, 0, 0}, "^4Chat^7 Commands: /do, /me, /ooc")
+	TriggerClientEvent("chatMessage", source, "", {255, 0, 0}, "^4Info^7 Commands: /discord")
 end)
 
 -- Default commands
