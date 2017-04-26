@@ -12,11 +12,12 @@ AutoStartResources:
     - hardcap # prevents too many players from joining
     - scoreboard
     - essentialmode
+    - es_miscstores
     - es_roleplay
     - es_admin
     - es_adminpanel
-    - watermark
     - es_carshop
+    - watermark
     - BRP-Taxi
     - BRP-Bank
     - BRP-Blip
@@ -24,6 +25,7 @@ AutoStartResources:
     - BRP-playernames
     - emotes
     - speedcamera
+
 
 
 

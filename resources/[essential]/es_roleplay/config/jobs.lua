@@ -3,7 +3,7 @@ jobs = {
 		["displayName"] = "Sandy Shore Police Officer",
 		["skin"] = "s_m_y_sheriff_01",
 		["onJoin"] = function(source, user)
-			TriggerClientEvent('chatMessage', source, "JOB", {255, 0, 0}, "Get your police vehicle at the ^4garage^0 for ^2£2 000")
+			TriggerClientEvent('chatMessage', source, "", {255, 0, 0}, "You are now on ^4duty^7 as a police officer^7. Your vehicle is ready for pickup at any garage.")
 		end,
 		["onLeave"] = function(source, user)
 			-- Do code here for when someone leaves this job
@@ -14,18 +14,24 @@ jobs = {
 		["weapons"] = {
 			"WEAPON_STUNGUN",
 			"WEAPON_PISTOL",
-			"WEAPON_CARBINERIFLE"
 		},
 		["salary"] = 1050
 	},
 	["ems"] = {
 		["displayName"] = "Medic",
-		["customJoinMessage"] = "Welcome, you can save people now! To heal them stand next to them and type: ^2^*/heal ID",
+		["skin"] = "s_m_m_paramedic_01",
+		["onJoin"] = function(source, user)
+			TriggerClientEvent('chatMessage', source, "", {255, 0, 0}, "You are now on ^4duty^7 as a medic. Use /heal ^4(ID)^7 to heal people.")
+		end,
 		["weapons"] = {},
 		["salary"] = 1050
 	},
 	["fireman"] = {
 		["displayName"] = "Fireman",
+		["skin"] = "s_m_y_fireman_01",
+		["onJoin"] = function(source, user)
+			TriggerClientEvent('chatMessage', source, "", {255, 0, 0}, "You are now on ^4duty^7 as a Fireman. Your vehicle is ready for pickup at any garage.")
+		end,
 		["weapons"] = {},
 		["salary"] = 1050
 	},

@@ -97,7 +97,7 @@ local carshops = {
 local carshop_vehicles = {
 	['dominator'] = 50000,
 	['mule'] = 2000,
-	['police2'] = 2000,
+	['police2'] = 0,
 	['ninef'] = 250000,
 	['ninef2'] = 300000,
 	['prairie'] = 15000,
@@ -352,7 +352,7 @@ AddEventHandler('es_carshop:vehicleCustom', function(model, data)
 		else
 			TriggerClientEvent("chatMessage", source, "CUSTOMS", {255, 0, 0}, "You do not have a spawned vehicle to save.")
 		end
-	end 
+	end
 end)
 
 function setDynamicMulti(source, vehicle, options)

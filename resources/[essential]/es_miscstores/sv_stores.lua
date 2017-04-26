@@ -3,8 +3,18 @@ local shops = {
 		['type'] = 'ammunation',
 		['position'] = {['x'] = 1693.93, ['y'] = 3759.73, ['z'] = 34.7},
 		['stock'] = {
-			["WEAPON_PISTOL"] = 1000,
-			["WEAPON_SMG"] = 5000
+			["WEAPON_BOTTLE"] = 10000,
+			["WEAPON_BAT"] = 15000,
+			["WEAPON_KNUCKLE"] = 15000,
+			["WEAPON_KNIFE"] = 20000,
+			["WEAPON_DAGGER"] = 20000,
+			["WEAPON_HAMMER"] = 25000,
+			["WEAPON_HATCHET"] = 30000,
+			["WEAPON_NIGHTSTICK"] = 30000,
+			["WEAPON_CROWBAR"] = 30000,
+			["WEAPON_GOLFCLUB"] = 35000,
+			["WEAPON_SWITCHBLADE"] = 40000,
+			["WEAPON_MACHETE"] = 45000,
 		}
 	},
 
